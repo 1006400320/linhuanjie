@@ -1,4 +1,4 @@
-package com.linhuanjie.javase;
+package com.linhuanjie.java8;
 
 abstract class AbstractPerson {
     public void print() {

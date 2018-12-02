@@ -1,5 +1,8 @@
 package com.linhuanjie.javase;
 
+/**
+ * 二分法查找
+ */
 public class binarySearchTest {
 
     public static void main(String[] args) {
