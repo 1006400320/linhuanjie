@@ -1,4 +1,5 @@
 rootProject.name = 'linhuanjie'
 include 'common'
 include 'demos'
+include 'hadoop'
 
