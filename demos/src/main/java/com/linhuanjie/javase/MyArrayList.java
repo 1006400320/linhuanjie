@@ -70,8 +70,9 @@ public class MyArrayList {
         return elementData[index];
     }
     private void rangeCheck(int index) {
-        if (index >= size)
+        if (index >= size) {
             throw new IndexOutOfBoundsException("下标越界");
+        }
     }
 
     /**
@@ -87,10 +88,12 @@ public class MyArrayList {
         Object oldValue = elementData[index];
         // 找出置换结束位置
         int numMoved = size - index - 1;
-        if (numMoved > 0)
+        if (numMoved > 0) {
             // 从 index+1 开始 将值覆盖为 index-numMoved 的值
-            System.arraycopy(elementData, index+1, elementData, index, numMoved);
-        elementData[--size] = null; // clear to let GC do its work
+            System.arraycopy(elementData, index + 1, elementData, index, numMoved);
+        }
+        // clear to let GC do its work
+        elementData[--size] = null;
 
         return oldValue;
     }
