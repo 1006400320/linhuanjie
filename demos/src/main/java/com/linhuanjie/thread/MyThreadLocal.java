@@ -2,7 +2,8 @@ package com.linhuanjie.thread;
 
 /**
  * @author: linhuanjie
- * @description:  ThreadLocal
+ * @description:  ThreadLocal用于保存某个线程共享变量：
+ *                           对于同一个static ThreadLocal，不同线程只能从中get，set，remove自己的变量，而不会影响其他线程的变量。
  * @createTime : 2018-09-24 23:08
  * @email: lhuanjie@qq.com
  */
